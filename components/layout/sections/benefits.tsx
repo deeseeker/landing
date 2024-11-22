@@ -10,28 +10,28 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "Blocks",
-    title: "Build Brand Trust",
+    icon: "Wallet",
+    title: "Flexible Withdrawals",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Daily, weekly, or monthly options with instant processing. Withdraw any amount without waiting for quotas or limits.",
   },
   {
     icon: "LineChart",
-    title: "More Leads",
+    title: "Easy Setup",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "No foreign accounts or complex setups required. Turn social media scrolling into earning seamlessly.",
   },
   {
     icon: "Wallet",
-    title: "Higher Conversions",
+    title: "Inclusive Monetization",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Start earning no matter your follower count—everyone can monetize their social presence.",
   },
   {
-    icon: "Sparkle",
-    title: "Test Marketing Ideas",
+    icon: "Blocks",
+    title: "Supportive Community",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Join a network of creators and entrepreneurs who are breaking financial barriers. Get the support and resources you need to succeed.",
   },
 ];
 
@@ -46,9 +46,9 @@ export const BenefitsSection = () => {
             Your Shortcut to Success
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            ducimus reprehenderit architecto rerum similique facere odit
-            deleniti necessitatibus quo quae.
+            Join Uphoria and discover the ultimate platform to grow your wealth,
+            creativity, and influence. Sign up now to take control of your
+            financial future!
           </p>
         </div>
 

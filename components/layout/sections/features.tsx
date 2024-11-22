@@ -11,39 +11,54 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "TabletSmartphone",
-    title: "Mobile Friendly",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+    title: "E-Ventures",
+    description: "Buy and sell digital products easily in one place.",
   },
   {
     icon: "BadgeCheck",
-    title: "Social Proof",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+    title: "Skill Hub",
+    description: "Learn new skills through classes taught by industry experts.",
   },
   {
     icon: "Goal",
-    title: "Targeted Content",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+    title: "TikTok Monetization",
+    description: "Turn your TikTok content into a source of income.",
   },
   {
     icon: "PictureInPicture",
-    title: "Strong Visuals",
-    description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+    title: "Social Media Challenges",
+    description: "Earn prizes by participating in fun challenges.",
   },
   {
     icon: "MousePointerClick",
-    title: "Clear CTA",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+    title: "Profile Jumpstart",
+    description: "Boost your online profile and grow faster.",
   },
   {
     icon: "Newspaper",
-    title: "Clear Headline",
+    title: "24/7",
+    description: "Get help anytime with our round-the-clock support team.",
+  },
+  {
+    icon: "TabletSmartphone",
+    title: "Swift Payment",
+    description: "Receive your earnings quickly and securely.",
+  },
+  {
+    icon: "BadgeCheck",
+    title: "NFTNook",
+    description: "Create, buy, and sell NFTs effortlessly.",
+  },
+  {
+    icon: "Goal",
+    title: "Game Zone",
+    description: "Play games and earn rewards while having fun.",
+  },
+  {
+    icon: "PictureInPicture",
+    title: "TikTok Boost",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Increase your chances of getting featured on TikTok’s For You Page.",
   },
 ];
 
@@ -59,9 +74,8 @@ export const FeaturesSection = () => {
       </h2>
 
       <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-        fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-        facere tenetur.
+        We let you withdraw anytime—daily, weekly, or monthly—instantly and with
+        no limits. No waiting for monthly payouts or referral goals.
       </h3>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

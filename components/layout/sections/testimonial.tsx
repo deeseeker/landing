@@ -27,52 +27,44 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: "https://github.com/shadcn.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Wariz Adeyemi",
+    userName: "Student",
     comment:
-      "Wow NextJs + Shadcn is awesome!. This template lets me change colors, fonts and images to match my brand identity. ",
+      "Uphoria completely changed how I use social media. I can now monetize my Instagram and TikTok without needing a huge following. The daily withdrawal option is a game-changer!",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
+    name: "Olaleye Samuel",
+    userName: "Teacher",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. ",
+      "I was skeptical at first, but Alexa the AI is like having a personal assistant. Even when I'm offline, it ensures I keep earning. Uphoria has made monetizing my time so simple!",
     rating: 4.8,
   },
 
   {
     image: "https://github.com/shadcn.png",
     name: "Adam Johnson",
-    userName: "Chief Technology Officer",
+    userName: "Singer",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "The TikTok Daily Challenge is my favorite! Not only am I creating content and growing my page, but I’m also getting paid for it. This has opened up so many new opportunities for me.",
     rating: 4.9,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
+    name: "Dabiri Fathia",
+    userName: "Nurse",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Uphoria's ProfitSphere is genius. Watching my earnings grow effortlessly while I explore other features is so rewarding. I’ve never seen anything like this before.",
     rating: 5.0,
   },
   {
     image: "https://github.com/shadcn.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
+    name: "Dairo Zainab",
+    userName: "Business Man",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud incididunt consectetur adipiscing elit.",
+      "Uphoria is inclusive and easy to use. Whether you’re into e-books, NFTs, or just sharing links, there’s something for everyone. It’s a one-stop solution for earning online.",
     rating: 5.0,
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    rating: 4.9,
   },
 ];
 
@@ -85,7 +77,7 @@ export const TestimonialSection = () => {
         </h2>
 
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Hear What Our 1000+ Clients Say
+          Hear What Our 100+ Clients Say
         </h2>
       </div>
 

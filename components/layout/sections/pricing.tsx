@@ -14,60 +14,132 @@ enum PopularPlan {
   YES = 1,
 }
 
+// UPHORIA PLUS
+// Access Fee: ₦10,000
+// Benefits:
+
+// Welcome Bonus: $7.5 / ₦7,500
+// AI Assistance (Alexa): $1.5 / ₦1,500
+// Task Vault Earnings: $0.5 / ₦500
+// Daily Simple Tasks: $2 x 30 days = $60 / ₦60,000
+// Exclusive Features:
+
+// ProfitSphere: $0.5 / ₦500
+// ClickEarn: $10 / ₦1,000
+// NFT Earnings: Up to $50 / ₦50,000
+// TikTok Earnings: Up to $80 / ₦80,000
+// Sales Bonuses:
+
+// 1st Spillover: $0.4 / ₦400
+// 2nd Spillover: $0.1 / ₦100
+// Referral Commissions:
+
+// Earn ₦6,500 for LITE referrals
+// Earn ₦8,500 for PLUS referrals
+
+// UPHORIA LITE
+// Access Fee: ₦7,500
+// Benefits:
+
+// Welcome Bonus: $7.5 / ₦6,000
+// Task Vault Earnings: $1.5 / ₦1,500
+// Daily Simple Tasks: $1.5 x 30 days = $45 / ₦45,000
+// Exclusive Features:
+
+// ProfitSphere: $0.5 / ₦500
+// NFT Earnings: Up to $50 / ₦50,000
+// TikTok Earnings: Up to $80 / ₦80,000
+// Sales Bonuses:
+
+// 1st Spillover: $0.2 / ₦200
+// 2nd Spillover: $0.1 / ₦100
+// Referral Commissions:
+
+// Earn ₦6,500 per referral (for both LITE and PLUS users)
 interface PlanProps {
   title: string;
   popular: PopularPlan;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
+  exclusiveList: string[];
+  salesList: string[];
 }
 
 const plans: PlanProps[] = [
   {
     title: "Free",
     popular: 0,
-    price: 0,
+    price: "0",
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Start Free Trial",
-    benefitList: [
-      "1 team member",
-      "1 GB storage",
-      "Upto 2 pages",
-      "Community support",
-      "AI assistance",
-    ],
+    benefitList: ["Not available"],
+    exclusiveList: [],
+    salesList: [],
   },
   {
-    title: "Premium",
+    title: "Plus",
     popular: 1,
-    price: 45,
+    price: "10,000",
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Get starterd",
     benefitList: [
-      "4 team member",
-      "8 GB storage",
-      "Upto 6 pages",
-      "Priority support",
-      "AI assistance",
+      "Welcome Bonus: $7.5 / ₦7,500",
+      "AI Assistance (Alexa): $1.5 / ₦1,500",
+      "Task Vault Earnings: $0.5 / ₦500",
+      "Daily Simple Tasks: $60 / ₦60,000",
     ],
+
+    exclusiveList: [
+      "ProfitSphere: $0.5 / ₦500",
+      "ClickEarn: $10 / ₦1,000",
+      "NFT Earnings: $50 / ₦50,000",
+      "TikTok Earnings: $80 / ₦80,000",
+    ],
+    salesList: ["1st Spillover: $0.4 / ₦400", "2nd Spillover: $0.1 / ₦100"],
+
+    // Welcome Bonus: $7.5 / ₦7,500
+    // AI Assistance (Alexa): $1.5 / ₦1,500
+    // Task Vault Earnings: $0.5 / ₦500
+    // Daily Simple Tasks: $2 x 30 days = $60 / ₦60,000
+    // Exclusive Features:
+
+    // ProfitSphere: $0.5 / ₦500
+    // ClickEarn: $10 / ₦1,000
+    // NFT Earnings: Up to $50 / ₦50,000
+    // TikTok Earnings: Up to $80 / ₦80,000
+    // Sales Bonuses:
+
+    // 1st Spillover: $0.4 / ₦400
+    // 2nd Spillover: $0.1 / ₦100
+    // Referral Commissions:
+
+    // Earn ₦6,500 for LITE referrals
+    // Earn ₦8,500 for PLUS referrals
   },
   {
-    title: "Enterprise",
+    title: "Lite",
     popular: 0,
-    price: 120,
+    price: "7,500",
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Contact US",
     benefitList: [
-      "10 team member",
-      "20 GB storage",
-      "Upto 10 pages",
-      "Phone & email support",
-      "AI assistance",
+      "Welcome Bonus: $6 / ₦6,000",
+
+      "Task Vault Earnings: $1.5 / ₦1500",
+      "Daily Simple Tasks: $45 / ₦45,000",
     ],
+    exclusiveList: [
+      "ProfitSphere: $7.5 / ₦7,500",
+      "ClickEarn: $1.5 / ₦1,500",
+      "NFT Earnings: $0.5 / ₦500",
+      "TikTok Earnings: $60 / ₦60,000",
+    ],
+    salesList: ["1st Spillover: $0.2 / ₦200", "2nd Spillover: $0.1 / ₦100"],
   },
 ];
 
@@ -88,7 +160,16 @@ export const PricingSection = () => {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
         {plans.map(
-          ({ title, popular, price, description, buttonText, benefitList }) => (
+          ({
+            title,
+            popular,
+            price,
+            description,
+            buttonText,
+            benefitList,
+            exclusiveList,
+            salesList,
+          }) => (
             <Card
               key={title}
               className={
@@ -105,17 +186,42 @@ export const PricingSection = () => {
                 </CardDescription>
 
                 <div>
-                  <span className="text-3xl font-bold">${price}</span>
+                  <span className="text-3xl font-bold">#{price}</span>
                   <span className="text-muted-foreground"> /month</span>
                 </div>
               </CardHeader>
 
-              <CardContent className="flex">
+              <CardContent className="flex flex-col">
                 <div className="space-y-4">
                   {benefitList.map((benefit) => (
                     <span key={benefit} className="flex">
                       <Check className="text-primary mr-2" />
                       <h3>{benefit}</h3>
+                    </span>
+                  ))}
+                </div>
+
+                <div>
+                  <h3 className="my-4">Exclusive features:</h3>
+                </div>
+
+                <div className="space-y-4">
+                  {exclusiveList.map((exclusive) => (
+                    <span key={exclusive} className="flex">
+                      <Check className="text-primary mr-2" />
+                      <h3>{exclusive}</h3>
+                    </span>
+                  ))}
+                </div>
+                <div>
+                  <h3 className="my-4">Sales Bonuses:</h3>
+                </div>
+
+                <div className="space-y-4">
+                  {salesList.map((sale) => (
+                    <span key={sale} className="flex">
+                      <Check className="text-primary mr-2" />
+                      <h3>{sale}</h3>
                     </span>
                   ))}
                 </div>

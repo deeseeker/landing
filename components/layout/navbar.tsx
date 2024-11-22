@@ -70,7 +70,7 @@ export const Navbar = () => {
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card backdrop-blur bg-transparent">
       <Link href="/" className="font-bold text-lg flex items-center ml-2">
-        Easy Template 2
+        Uphoria
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -170,7 +170,7 @@ export const Navbar = () => {
       <div className="hidden lg:flex">
         <ToggleTheme />
 
-        <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
+        {/* <Button asChild size="sm" variant="ghost" aria-label="View on GitHub">
           <Link
             aria-label="View on GitHub"
             href="https://github.com/DarkInventor/easy-ui"
@@ -178,7 +178,7 @@ export const Navbar = () => {
           >
             <Github className="size-5" />
           </Link>
-        </Button>
+        </Button> */}
       </div>
     </header>
   );
