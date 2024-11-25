@@ -16,13 +16,13 @@ const benefitList: BenefitsProps[] = [
       "Daily, weekly, or monthly options with instant processing. Withdraw any amount without waiting for quotas or limits.",
   },
   {
-    icon: "LineChart",
-    title: "Easy Setup",
+    icon: "Globe",
+    title: "Uphoria Everywhere",
     description:
-      "No foreign accounts or complex setups required. Turn social media scrolling into earning seamlessly.",
+      "Uphoria welcomes everyone all across the globe, breaking barriers to provide unlimited access to our features and benefits.",
   },
   {
-    icon: "Wallet",
+    icon: "Banknote",
     title: "Inclusive Monetization",
     description:
       "Start earning no matter your follower count—everyone can monetize their social presence.",

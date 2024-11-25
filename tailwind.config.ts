@@ -21,6 +21,12 @@ module.exports = {
       },
     },
     extend: {
+      transitionDuration: {
+        400: "400ms",
+      },
+      scale: {
+        102: "1.02",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

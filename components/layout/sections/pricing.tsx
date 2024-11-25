@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -8,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 enum PopularPlan {
   NO = 0,
@@ -85,7 +87,7 @@ const plans: PlanProps[] = [
     price: "10,000",
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get starterd",
+    buttonText: "Get started",
     benefitList: [
       "Welcome Bonus: $7.5 / ₦7,500",
       "AI Assistance (Alexa): $1.5 / ₦1,500",
@@ -144,6 +146,7 @@ const plans: PlanProps[] = [
 ];
 
 export const PricingSection = () => {
+  const router = useRouter();
   return (
     <section className="container py-24 sm:py-32">
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
@@ -229,6 +232,11 @@ export const PricingSection = () => {
 
               <CardFooter>
                 <Button
+                  onClick={() =>
+                    router.push(
+                      "https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9"
+                    )
+                  }
                   variant={
                     popular === PopularPlan?.YES ? "default" : "secondary"
                   }

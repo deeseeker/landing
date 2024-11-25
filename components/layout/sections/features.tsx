@@ -10,19 +10,30 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "TabletSmartphone",
-    title: "E-Ventures",
-    description: "Buy and sell digital products easily in one place.",
-  },
-  {
-    icon: "BadgeCheck",
+    icon: "School",
     title: "Skill Hub",
     description: "Learn new skills through classes taught by industry experts.",
   },
+  // {
+  //   icon: "TabletSmartphone",
+  //   title: "E-Ventures",
+  //   description: "Buy and sell digital products easily in one place.",
+  // },
+  // {
+  //   icon: "Goal",
+  //   title: "TikTok Monetization",
+  //   description: "Turn your TikTok content into a source of income.",
+  // },
+
+  // {
+  //   icon: "MousePointerClick",
+  //   title: "Profile Jumpstart",
+  //   description: "Boost your online profile and grow faster.",
+  // },
   {
-    icon: "Goal",
-    title: "TikTok Monetization",
-    description: "Turn your TikTok content into a source of income.",
+    icon: "Clock",
+    title: "24/7",
+    description: "Get help anytime with our round-the-clock support team.",
   },
   {
     icon: "PictureInPicture",
@@ -30,36 +41,27 @@ const featureList: FeaturesProps[] = [
     description: "Earn prizes by participating in fun challenges.",
   },
   {
-    icon: "MousePointerClick",
-    title: "Profile Jumpstart",
-    description: "Boost your online profile and grow faster.",
-  },
-  {
-    icon: "Newspaper",
-    title: "24/7",
-    description: "Get help anytime with our round-the-clock support team.",
-  },
-  {
-    icon: "TabletSmartphone",
-    title: "Swift Payment",
-    description: "Receive your earnings quickly and securely.",
-  },
-  {
-    icon: "BadgeCheck",
-    title: "NFTNook",
-    description: "Create, buy, and sell NFTs effortlessly.",
-  },
-  {
     icon: "Goal",
     title: "Game Zone",
     description: "Play games and earn rewards while having fun.",
   },
-  {
-    icon: "PictureInPicture",
-    title: "TikTok Boost",
-    description:
-      "Increase your chances of getting featured on TikTok’s For You Page.",
-  },
+  // {
+  //   icon: "TabletSmartphone",
+  //   title: "Swift Payment",
+  //   description: "Receive your earnings quickly and securely.",
+  // },
+  // {
+  //   icon: "BadgeCheck",
+  //   title: "NFTNook",
+  //   description: "Create, buy, and sell NFTs effortlessly.",
+  // },
+
+  // {
+  //   icon: "PictureInPicture",
+  //   title: "TikTok Boost",
+  //   description:
+  //     "Increase your chances of getting featured on TikTok’s For You Page.",
+  // },
 ];
 
 export const FeaturesSection = () => {

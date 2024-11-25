@@ -5,9 +5,11 @@ import { ArrowRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export const HeroSection = () => {
   const { theme } = useTheme();
+  const router = useRouter();
   return (
     <section className="container w-full">
       <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32">
@@ -34,7 +36,12 @@ export const HeroSection = () => {
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Button className="w-5/6 md:w-1/4 font-bold group/arrow">
+            <Button
+              onClick={() =>
+                router.push("https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9")
+              }
+              className="w-5/6 md:w-1/4 font-bold group/arrow"
+            >
               Join Now
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
@@ -59,7 +66,7 @@ export const HeroSection = () => {
           <div className="w-full md:w-[1200px] mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-secondary border-t-primary/30">
             <iframe
               className="w-full h-[315px] md:h-[560px] rounded-lg"
-              src="https://www.youtube.com/embed/_ag_NehSwXQ?si=18uQXCJSjGDCJ9eM"
+              src="https://www.youtube.com/embed/LDGY3DxxMAQ?si=QlxEA_OMYSE16Q5B"
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -68,8 +75,6 @@ export const HeroSection = () => {
             ></iframe>
           </div>
           <div className="absolute bottom-0 left-0 w-full bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div>
-
-          {/* <div className="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"></div> */}
         </div>
       </div>
     </section>
