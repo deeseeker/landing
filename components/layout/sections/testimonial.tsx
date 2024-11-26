@@ -26,42 +26,42 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "Wariz Adeyemi",
+    image: "/RoseMary.jpg",
+    name: "Rose Mary",
     userName: "Student",
     comment:
       "Uphoria completely changed how I use social media. I can now monetize my Instagram and TikTok without needing a huge following. The daily withdrawal option is a game-changer!",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
+    image: "/Olaleye Samuel.webp",
     name: "Olaleye Samuel",
-    userName: "Teacher",
+    userName: "Student",
     comment:
       "I was skeptical at first, but Alexa the AI is like having a personal assistant. Even when I'm offline, it ensures I keep earning. Uphoria has made monetizing my time so simple!",
     rating: 4.8,
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "Adam Johnson",
-    userName: "Singer",
+    image: "/Kwame.jpg",
+    name: "Kwame Andre",
+    userName: "Teacher",
     comment:
       "The TikTok Daily Challenge is my favorite! Not only am I creating content and growing my page, but I’m also getting paid for it. This has opened up so many new opportunities for me.",
     rating: 4.9,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Dabiri Fathia",
+    image: "/Lara.jpg",
+    name: "Lara Da Silva",
     userName: "Nurse",
     comment:
       "Uphoria's ProfitSphere is genius. Watching my earnings grow effortlessly while I explore other features is so rewarding. I’ve never seen anything like this before.",
     rating: 5.0,
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "Dairo Zainab",
-    userName: "Business Man",
+    image: "/Angeline.jpg",
+    name: "Angelina Johnson",
+    userName: "Dancer & Fitness Coach",
     comment:
       "Uphoria is inclusive and easy to use. Whether you’re into e-books, NFTs, or just sharing links, there’s something for everyone. It’s a one-stop solution for earning online.",
     rating: 5.0,
@@ -109,10 +109,11 @@ export const TestimonialSection = () => {
                   <div className="flex flex-row items-center gap-4">
                     <Avatar>
                       <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
+                        src={review.image}
+                        alt="avatar"
+                        className="object-cover"
                       />
-                      <AvatarFallback>SV</AvatarFallback>
+                      <AvatarFallback>RM</AvatarFallback>
                     </Avatar>
 
                     <div className="flex flex-col">

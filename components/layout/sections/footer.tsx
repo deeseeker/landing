@@ -25,7 +25,10 @@ export const FooterSection = () => {
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9"
+                className="opacity-60 hover:opacity-100"
+              >
                 Whatsapp
               </Link>
             </div>
