@@ -1,11 +1,11 @@
 import { FooterSection } from "@/components/layout/sections/footer";
-import { GallerySection } from "@/components/layout/sections/gallery";
+import { PaymentSection } from "@/components/layout/sections/payment";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export default function Home() {
   return (
     <>
-      <GallerySection />
+      <PaymentSection />
       <TestimonialSection />
       <FooterSection />
     </>

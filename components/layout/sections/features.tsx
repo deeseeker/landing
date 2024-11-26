@@ -14,29 +14,14 @@ const featureList: FeaturesProps[] = [
     title: "Skill Hub",
     description: "Learn new skills through classes taught by industry experts.",
   },
-  // {
-  //   icon: "TabletSmartphone",
-  //   title: "E-Ventures",
-  //   description: "Buy and sell digital products easily in one place.",
-  // },
-  // {
-  //   icon: "Goal",
-  //   title: "TikTok Monetization",
-  //   description: "Turn your TikTok content into a source of income.",
-  // },
 
-  // {
-  //   icon: "MousePointerClick",
-  //   title: "Profile Jumpstart",
-  //   description: "Boost your online profile and grow faster.",
-  // },
   {
     icon: "Clock",
     title: "24/7",
     description: "Get help anytime with our round-the-clock support team.",
   },
   {
-    icon: "PictureInPicture",
+    icon: "Swords",
     title: "Social Media Challenges",
     description: "Earn prizes by participating in fun challenges.",
   },
@@ -45,23 +30,16 @@ const featureList: FeaturesProps[] = [
     title: "Game Zone",
     description: "Play games and earn rewards while having fun.",
   },
-  // {
-  //   icon: "TabletSmartphone",
-  //   title: "Swift Payment",
-  //   description: "Receive your earnings quickly and securely.",
-  // },
-  // {
-  //   icon: "BadgeCheck",
-  //   title: "NFTNook",
-  //   description: "Create, buy, and sell NFTs effortlessly.",
-  // },
-
-  // {
-  //   icon: "PictureInPicture",
-  //   title: "TikTok Boost",
-  //   description:
-  //     "Increase your chances of getting featured on TikTok’s For You Page.",
-  // },
+  {
+    icon: "Rabbit",
+    title: "Swift Payment",
+    description: "Receive your earnings quickly and securely.",
+  },
+  {
+    icon: "BadgeCheck",
+    title: "NFTNook",
+    description: "Create, buy, and sell NFTs effortlessly.",
+  },
 ];
 
 export const FeaturesSection = () => {

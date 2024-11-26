@@ -13,33 +13,52 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free NextJS Shadcn template.",
+    question: "Is referral compulsory?",
+    answer:
+      "No, referral is optional on Uphoria. You don't need to refer others to get paid.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Do I need to pay for registration?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Yes, registration requires a fee, which can be used to place an ad on the platform or withdrawn if unused",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+    question: "Are video ads available to watch and earn from anytime?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "Yes, monetized ad videos are always available for members to watch and earn from at any time.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "How do I withdraw my earnings?",
+    answer:
+      "Withdrawals follow a stipulated schedule, similar to other video monetization platforms.",
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "Do I need experience to join Uphoria?",
+    answer: "No, prior experience is not required to join Uphoria.",
     value: "item-5",
+  },
+  {
+    question:
+      "Can I choose to only watch videos without engaging in other features?",
+    answer:
+      "Yes, you can choose to do just one thing on the platform and still earn money.",
+    value: "item-6",
+  },
+  {
+    question: "How much can I make in a day?",
+    answer:
+      "Your daily earnings will depend on your input, but with dedication, you can earn at least $15 cumulatively.",
+    value: "item-7",
+  },
+  {
+    question: "Who is Alexa the ai?",
+    answer:
+      "Alexa The Ai is in charge, pushing and making sure users product get to larger audience, all TikTok marketers, Instagram marketers and offline marketers have full access to this immediately you signup on Uphoria.",
+    value: "item-8",
   },
 ];
 

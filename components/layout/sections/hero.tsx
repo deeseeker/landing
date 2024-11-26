@@ -37,12 +37,10 @@ export const HeroSection = () => {
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
             <Button
-              onClick={() =>
-                router.push("https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9")
-              }
+              onClick={() => router.push("/payment")}
               className="w-5/6 md:w-1/4 font-bold group/arrow"
             >
-              Join Now
+              Register Now
               <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
             </Button>
 

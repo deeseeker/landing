@@ -15,28 +15,34 @@ interface ServiceProps {
   pro: ProService;
   description: string;
 }
+// {
+//   icon: "PictureInPicture",
+//   title: "TikTok Boost",
+//   description:
+//     "Increase your chances of getting featured on TikTok’s For You Page.",
+// },
+
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: "TikTok Monetization",
+    description: "Turn your TikTok content into a source of income.",
+    pro: 0,
+  },
+  {
+    title: "Profile Jumpstart",
+    description: "Boost your online profile and grow faster.",
+    pro: 0,
+  },
+  {
+    title: "E-Ventures",
+    description: "Buy and sell digital products easily in one place.",
+    pro: 0,
+  },
+  {
+    title: "TikTok Boost",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Increase your chances of getting featured on TikTok’s For You Page.",
     pro: 0,
-  },
-  {
-    title: "Social Media Integrations",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
-  },
-  {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
   },
 ];
 

@@ -43,25 +43,23 @@ const routeList: RouteProps[] = [
     label: "Gallery",
   },
   {
-    href: "#faq",
+    href: "/#faq",
     label: "FAQ",
   },
 ];
 
 const featureList: FeatureProps[] = [
   {
-    title: "Showcase Your Value ",
-    description: "Highlight how your product solves user problems.",
+    title: "TikTok Monetization ",
+    description: "Turn your TikTok content into a source of income.",
   },
   {
-    title: "Build Trust",
-    description:
-      "Leverages social proof elements to establish trust and credibility.",
+    title: "Profile Jumpstart",
+    description: "Boost your online profile and grow faster",
   },
   {
-    title: "Capture Leads",
-    description:
-      "Make your lead capture form visually appealing and strategically.",
+    title: "E-Ventures",
+    description: "Buy and sell digital products easily in one place.",
   },
 ];
 
@@ -130,9 +128,9 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
-                  src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                  alt="RadixLogo"
-                  className="h-full w-full rounded-md object-cover"
+                  src="/uphoria-black-logo.png"
+                  alt="UphoriaLogo"
+                  className="h-full w-full rounded-md object-contain border border-secondary-foreground"
                   width={600}
                   height={600}
                 />

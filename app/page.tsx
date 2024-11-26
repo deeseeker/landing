@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <SponsorsSection />
+      {/* x */}
       <BenefitsSection />
       <FeaturesSection />
       <ServicesSection />

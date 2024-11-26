@@ -16,26 +16,17 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Contact</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://t.me/+d3PkF_znVCk0Yjk0"
+                className="opacity-60 hover:opacity-100"
+              >
                 Telegram
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Facebook
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
                 Whatsapp
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Tiktok
               </Link>
             </div>
           </div>
@@ -64,20 +55,17 @@ export const FooterSection = () => {
           <div className="flex flex-col gap-2">
             <h3 className="font-bold text-lg">Help</h3>
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link
+                href="https://t.me/+d3PkF_znVCk0Yjk0"
+                className="opacity-60 hover:opacity-100"
+              >
                 Contact Us
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
+              <Link href="/#faq" className="opacity-60 hover:opacity-100">
                 FAQ
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
               </Link>
             </div>
           </div>
@@ -113,7 +101,7 @@ export const FooterSection = () => {
               href="#"
               className="text-primary transition-all border-primary hover:border-b-2 ml-1"
             >
-              Euphoria
+              Uphoria
             </Link>
           </h3>
         </section>

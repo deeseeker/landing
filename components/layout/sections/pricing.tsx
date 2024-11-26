@@ -16,48 +16,6 @@ enum PopularPlan {
   YES = 1,
 }
 
-// UPHORIA PLUS
-// Access Fee: ₦10,000
-// Benefits:
-
-// Welcome Bonus: $7.5 / ₦7,500
-// AI Assistance (Alexa): $1.5 / ₦1,500
-// Task Vault Earnings: $0.5 / ₦500
-// Daily Simple Tasks: $2 x 30 days = $60 / ₦60,000
-// Exclusive Features:
-
-// ProfitSphere: $0.5 / ₦500
-// ClickEarn: $10 / ₦1,000
-// NFT Earnings: Up to $50 / ₦50,000
-// TikTok Earnings: Up to $80 / ₦80,000
-// Sales Bonuses:
-
-// 1st Spillover: $0.4 / ₦400
-// 2nd Spillover: $0.1 / ₦100
-// Referral Commissions:
-
-// Earn ₦6,500 for LITE referrals
-// Earn ₦8,500 for PLUS referrals
-
-// UPHORIA LITE
-// Access Fee: ₦7,500
-// Benefits:
-
-// Welcome Bonus: $7.5 / ₦6,000
-// Task Vault Earnings: $1.5 / ₦1,500
-// Daily Simple Tasks: $1.5 x 30 days = $45 / ₦45,000
-// Exclusive Features:
-
-// ProfitSphere: $0.5 / ₦500
-// NFT Earnings: Up to $50 / ₦50,000
-// TikTok Earnings: Up to $80 / ₦80,000
-// Sales Bonuses:
-
-// 1st Spillover: $0.2 / ₦200
-// 2nd Spillover: $0.1 / ₦100
-// Referral Commissions:
-
-// Earn ₦6,500 per referral (for both LITE and PLUS users)
 interface PlanProps {
   title: string;
   popular: PopularPlan;
@@ -74,74 +32,53 @@ const plans: PlanProps[] = [
     title: "Free",
     popular: 0,
     price: "0",
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+    description: "There's currently no free plan",
+    buttonText: "",
     benefitList: ["Not available"],
-    exclusiveList: [],
-    salesList: [],
+    exclusiveList: ["Not available"],
+    salesList: ["Not available"],
   },
   {
     title: "Plus",
     popular: 1,
     price: "10,000",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+      "Unlock higher earnings with ₦6,500 for LITE referrals and ₦8,500 for PLUS referrals.",
     buttonText: "Get started",
     benefitList: [
-      "Welcome Bonus: $7.5 / ₦7,500",
-      "AI Assistance (Alexa): $1.5 / ₦1,500",
-      "Task Vault Earnings: $0.5 / ₦500",
-      "Daily Simple Tasks: $60 / ₦60,000",
+      "Welcome Bonus: $7.5",
+      "AI Assistance (Alexa): $1.5",
+      "Task Vault Earnings: $0.5",
+      "Daily Simple Tasks: $60",
     ],
 
     exclusiveList: [
-      "ProfitSphere: $0.5 / ₦500",
-      "ClickEarn: $10 / ₦1,000",
-      "NFT Earnings: $50 / ₦50,000",
-      "TikTok Earnings: $80 / ₦80,000",
+      "ProfitSphere: $0.5",
+      "ClickEarn: $10",
+      "NFT Earnings: $50",
+      "TikTok Earnings: $80",
     ],
-    salesList: ["1st Spillover: $0.4 / ₦400", "2nd Spillover: $0.1 / ₦100"],
-
-    // Welcome Bonus: $7.5 / ₦7,500
-    // AI Assistance (Alexa): $1.5 / ₦1,500
-    // Task Vault Earnings: $0.5 / ₦500
-    // Daily Simple Tasks: $2 x 30 days = $60 / ₦60,000
-    // Exclusive Features:
-
-    // ProfitSphere: $0.5 / ₦500
-    // ClickEarn: $10 / ₦1,000
-    // NFT Earnings: Up to $50 / ₦50,000
-    // TikTok Earnings: Up to $80 / ₦80,000
-    // Sales Bonuses:
-
-    // 1st Spillover: $0.4 / ₦400
-    // 2nd Spillover: $0.1 / ₦100
-    // Referral Commissions:
-
-    // Earn ₦6,500 for LITE referrals
-    // Earn ₦8,500 for PLUS referrals
+    salesList: ["1st Spillover: $0.4", "2nd Spillover: $0.1"],
   },
   {
     title: "Lite",
     popular: 0,
     price: "7,500",
-    description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
+    description: "Earn ₦6,500 per referral.",
     buttonText: "Contact US",
     benefitList: [
-      "Welcome Bonus: $6 / ₦6,000",
+      "Welcome Bonus: $6",
 
-      "Task Vault Earnings: $1.5 / ₦1500",
-      "Daily Simple Tasks: $45 / ₦45,000",
+      "Task Vault Earnings: $1.5",
+      "Daily Simple Tasks: $45",
     ],
     exclusiveList: [
-      "ProfitSphere: $7.5 / ₦7,500",
-      "ClickEarn: $1.5 / ₦1,500",
-      "NFT Earnings: $0.5 / ₦500",
-      "TikTok Earnings: $60 / ₦60,000",
+      "ProfitSphere: $7.5",
+      "ClickEarn: $1.5",
+      "NFT Earnings: $0.5",
+      "TikTok Earnings: $60",
     ],
-    salesList: ["1st Spillover: $0.2 / ₦200", "2nd Spillover: $0.1 / ₦100"],
+    salesList: ["1st Spillover: $0.2", "2nd Spillover: $0.1"],
   },
 ];
 
@@ -231,19 +168,23 @@ export const PricingSection = () => {
               </CardContent>
 
               <CardFooter>
-                <Button
-                  onClick={() =>
-                    router.push(
-                      "https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9"
-                    )
-                  }
-                  variant={
-                    popular === PopularPlan?.YES ? "default" : "secondary"
-                  }
-                  className="w-full"
-                >
-                  {buttonText}
-                </Button>
+                {buttonText === "" ? (
+                  ""
+                ) : (
+                  <Button
+                    onClick={() =>
+                      router.push(
+                        "https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9"
+                      )
+                    }
+                    variant={
+                      popular === PopularPlan?.YES ? "default" : "secondary"
+                    }
+                    className="w-full"
+                  >
+                    {buttonText}
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           )
