@@ -33,9 +33,9 @@ export const PaymentSection = () => {
       </div>
 
       {/* Steps Section */}
-      <ol className="space-y-8 w-full max-w-xl">
+      <ol className="space-y-8 w-full max-w-xl text-black">
         {/* Step 1 */}
-        <li className="bg-gray-100 p-6 rounded-md shadow-md space-y-4">
+        <li className="bg-gray-100 p-6 rounded-md shadow-md space-y-4 text-black">
           <h3 className="text-lg font-semibold">Step 1</h3>
           <p>
             Make a payment to the account below to start your registration
