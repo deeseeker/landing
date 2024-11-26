@@ -18,7 +18,7 @@ export const ToggleTheme = () => {
 
       <div className="dark:flex gap-2 hidden">
         <Sun className="size-5" />
-        <span className="block lg:hidden">Claro</span>
+        <span className="block lg:hidden">Theme</span>
       </div>
 
       <span className="sr-only">Trocar de tema</span>
