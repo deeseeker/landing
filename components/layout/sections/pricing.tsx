@@ -65,7 +65,7 @@ const plans: PlanProps[] = [
     popular: 0,
     price: "7,500",
     description: "Earn ₦6,500 per referral.",
-    buttonText: "Contact US",
+    buttonText: "Start Plan",
     benefitList: [
       "Welcome Bonus: $6",
 
@@ -172,11 +172,7 @@ export const PricingSection = () => {
                   ""
                 ) : (
                   <Button
-                    onClick={() =>
-                      router.push(
-                        "https://chat.whatsapp.com/BVRHuKPsySIAj4PbeBz4w9"
-                      )
-                    }
+                    onClick={() => router.push("/payment")}
                     variant={
                       popular === PopularPlan?.YES ? "default" : "secondary"
                     }
