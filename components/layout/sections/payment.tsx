@@ -1,6 +1,11 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogOverlay,
+  DialogTitle,
+} from "@radix-ui/react-dialog";
 import { ArrowRight, Copy } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -127,18 +132,17 @@ export const PaymentSection = () => {
       </ol>
 
       {/* Copy Modal */}
-      {copied && (
-        <Dialog open={copied}>
-          <DialogContent className="text-center">
-            <DialogTitle className="text-green-700 dark:text-green-300">
-              Copied to Clipboard!
-            </DialogTitle>
-            <p className="text-gray-800 dark:text-gray-300">
-              The account number has been successfully copied.
-            </p>
-          </DialogContent>
-        </Dialog>
-      )}
+      <Dialog open={copied} onOpenChange={setCopied}>
+        <DialogOverlay className="fixed inset-0 bg-black bg-opacity-50" />
+        <DialogContent className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-card p-6 rounded-md shadow-lg text-center">
+          <DialogTitle className="text-green-700 dark:text-green-300">
+            Copied to Clipboard!
+          </DialogTitle>
+          <p className="text-gray-800 dark:text-gray-300 mt-2">
+            The account number has been successfully copied.
+          </p>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
