@@ -90,7 +90,7 @@ export const PricingSection = () => {
         Pricing
       </h2>
 
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl text-center font-bold mb-11">
         Get unlimitted access
       </h2>
 
