@@ -122,7 +122,7 @@ export const PaymentSection = () => {
             Are you a citizen of another country?
           </h3>
           <Button
-            onClick={() => router.push(paymentDetails.whatsappLink)}
+            onClick={() => router.push("https://wa.link/3mlkze")}
             className="w-full sm:w-auto font-bold group"
           >
             Click here
